@@ -1,0 +1,17 @@
+{
+  "name": "samplescypress",
+  "version": "1.0.0",
+  "description": "Sample Script",
+  "main": "index.js",
+  "scripts": {
+    "cypress_headless": "cypress run",
+    "cypress_headed": "cypress run --headed",
+    "cypress_singletest_headless": "cypress run --spec cypress/integration/examples/login.spec.js",
+    "cypress_singletest_headed": "cypress run --headed --spec cypress/integration/examples/login.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.4.1"
+  }
+}
