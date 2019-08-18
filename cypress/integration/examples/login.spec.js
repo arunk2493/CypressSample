@@ -47,26 +47,4 @@ describe('Sample Cypress',() => {
         cy.get('#food-search > table > tbody > tr').should('have.length',0)
 
     })
-
-
-
-    it('Verify the api request for the given search string',() => {
-
-        cy.request({
-            method: 'get',
-            followRedirect: false,
-            url: 'https://food-cal-counter.herokuapp.com/api/food?q=Butter,%20with%20salt',
-
-            headers: {
-                accept: 'application/json'
-            },
-            response: []
-        }).then((response) => {
-            cy.log(response.body)
-            assert.equal(response.status,200)
-            expect(response.body).to.not.be.null
-        })
-
-    })
-
 })
