@@ -16,3 +16,9 @@ cypress open
 #Command Prompt:
 
 navigate to the project folder; then run npm run cypress_singletest_headed
+
+#To integrate with Applitools for Visual Regression Testing:
+
+npm install @applitools/eyes-cypress --save-dev
+
+npx eyes-setup

@@ -15,6 +15,7 @@ describe('Sample Cypress - Rest API',() => {
             cy.log(response.body)
             assert.equal(response.status,200)
             expect(response.body).to.not.be.null
+            expect(response.body).to.have.property('status','success')
         })
 
     })
